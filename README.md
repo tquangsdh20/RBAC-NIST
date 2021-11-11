@@ -10,23 +10,32 @@
 
 ## Introduction to RBAC
 
-RBAC stand for *Role Based Access Control* model which satisfied the following conditions:
+#### RBAC stand for *Role Based Access Control* model which satisfied the following conditions:
 - Access is determined by roles
 - A user’s roles are assigned by security administrators
 - A role’s permissions are assigned by security administrators
 
-For instance:
+#### For instance:
 
 <img src="./.github/rbac_example.svg?sanitize=true">
 
 ## RBAC Models
 
-There are 4 levels of RBAC Model as the followings:
+#### There are 4 levels of RBAC Model as the followings:
 
 - **RBAC0**: *contains the minimum functionality for an RBAC system*
 - **RBAC1**: *includes the RBAC0 functionality and adds role hierarchies, which enable one role to inherit permissions from another role*
 - **RBAC2**: *includes RBAC0 and adds constraints, which restrict the ways in which the components of a RBAC system may be configured*
 - **RBAC3**: *contains the functionality of RBAC0, RBAC1, and RBAC2*
 
+## The NIST Model for RBAC
+
+### What is the NIST?
+
+<a href="https://vi.wikipedia.org/wiki/Vi%E1%BB%87n_Ti%C3%AAu_chu%E1%BA%A9n_v%C3%A0_K%E1%BB%B9_thu%E1%BA%ADt_qu%E1%BB%91c_gia_(Hoa_K%E1%BB%B3)"><p align="center"><img src="./.github/nist.svg?sanitize=true"></p></a>
+
+### The RBAC following NIST Model
+
+<a href="https://vi.wikipedia.org/wiki/Vi%E1%BB%87n_Ti%C3%AAu_chu%E1%BA%A9n_v%C3%A0_K%E1%BB%B9_thu%E1%BA%ADt_qu%E1%BB%91c_gia_(Hoa_K%E1%BB%B3)"><p align="center"><img src="./.github/rbac-nist.svg?sanitize=true"></p></a>
 
 Please refer the following slide for more details about RBAC: [![PowerPoint](https://img.shields.io/badge/PowerPoint-RBAC-red?style=plastic&logo=microsoftpowerpoint&logoColor=orange)](https://hcmuteduvn-my.sharepoint.com/:p:/g/personal/tquang_sdh20_hcmut_edu_vn/EZmcIMj8739LrdtF9CRbHwoBQ3NGoQUoaDMCjeEF6iZ_iA?e=dzX99T)
