@@ -84,8 +84,9 @@ INSERT INTO "sessions" ("name","dbms") VALUES ('IT','it.db');
 INSERT INTO "sessions" ("name","dbms") VALUES ('CHEMISTRY','chemistry.db');
 
 --Insert Users
-INSERT INTO "users" ("username", "fullname", "password") VALUES ('min.sdh20', 'Than Hai Nhat Min', 'password');
+INSERT INTO "users" ("username", "fullname", "password","role_in_session") VALUES ('admin', 'Admin', 'password','{"MATH":"ADMIN","IT":"ADMIN","CHEMISTRY":"ADMIN"}');
 INSERT INTO "users" ("username", "fullname", "password") VALUES ('one.sdh20', 'Tran One', 'password');
+INSERT INTO "users" ("username", "fullname", "password") VALUES ('min.sdh20', 'Than Hai Nhat Min', 'password');
 INSERT INTO "users" ("username", "fullname", "password") VALUES ('quit.sdh20', 'Nguyen Dinh Hoang Quit', 'password');
 '''
 
@@ -102,5 +103,3 @@ FROM
 WHERE 
     (operations.level <= roles.level);
 '''
-
-class InValidValue(Exception): ...
