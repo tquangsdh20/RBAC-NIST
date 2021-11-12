@@ -146,3 +146,6 @@ ipython_config.py
 #   git rm -r .ipynb_checkpoints/
 
 # End of https://www.toptal.com/developers/gitignore/api/jupyternotebooks
+
+# Remove file generate .csv
+src/model/*.csv
