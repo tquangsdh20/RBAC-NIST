@@ -32,11 +32,23 @@
 
 ### What is the NIST?
 
-<a href="https://vi.wikipedia.org/wiki/Vi%E1%BB%87n_Ti%C3%AAu_chu%E1%BA%A9n_v%C3%A0_K%E1%BB%B9_thu%E1%BA%ADt_qu%E1%BB%91c_gia_(Hoa_K%E1%BB%B3)"><p align="center"><img src="./.github/nist.svg?sanitize=true"></p></a>
+<a href="https://vi.wikipedia.org/wiki/Vi%E1%BB%87n_Ti%C3%AAu_chu%E1%BA%A9n_v%C3%A0_K%E1%BB%B9_thu%E1%BA%ADt_qu%E1%BB%91c_gia_(Hoa_K%E1%BB%B3)"><p align="center"><img src="./.github/nist.svg?sanitize=true" alt="The NIST icon" width="700" height="250" ></p></a>
 
-### The RBAC following NIST Model
+### The Basic Model for RBAC
 
-<a href="https://vi.wikipedia.org/wiki/Vi%E1%BB%87n_Ti%C3%AAu_chu%E1%BA%A9n_v%C3%A0_K%E1%BB%B9_thu%E1%BA%ADt_qu%E1%BB%91c_gia_(Hoa_K%E1%BB%B3)"><p align="center"><img src="./.github/rbac-nist.svg?sanitize=true"></p></a>
+<p align="center">
+<img src="./.github/rbac_base_model.svg?sanitize=true" alt="The NIST Basic/Core Model for RBAC">
+</p>
+
+### The Role Hierarchies Model for RBAC
+
+<a href="https://vi.wikipedia.org/wiki/Vi%E1%BB%87n_Ti%C3%AAu_chu%E1%BA%A9n_v%C3%A0_K%E1%BB%B9_thu%E1%BA%ADt_qu%E1%BB%91c_gia_(Hoa_K%E1%BB%B3)"><p align="center"><img src="./.github/rbac-nist.svg?sanitize=true" alt="Role Hierarchies Model"></p></a>
+
+### The Constraints Model for RBAC
+
+<p align="center">
+<img src="./.github/rbac_constraints_model.svg?sanitize=true" alt="The NIST Basic/Core Model for RBAC">
+</p>
 
 **Please refer this file [![PowerPoint](https://img.shields.io/badge/PowerPoint-RBAC-red?style=plastic&logo=microsoftpowerpoint&logoColor=orange)](https://hcmuteduvn-my.sharepoint.com/:p:/g/personal/tquang_sdh20_hcmut_edu_vn/EZmcIMj8739LrdtF9CRbHwoBQ3NGoQUoaDMCjeEF6iZ_iA?e=dzX99T) for more details about RBAC**
 
