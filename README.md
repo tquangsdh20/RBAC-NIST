@@ -50,6 +50,12 @@
 <img src="./.github/rbac_constraints_model.svg?sanitize=true" alt="The NIST Basic/Core Model for RBAC">
 </p>
 
+### Overview about the architure of Demo
+
+<p align="center">
+<img src="/.github/demo_roles.svg?sanitize=true">
+</p>
+
 **Please refer this file [![PowerPoint](https://img.shields.io/badge/PowerPoint-RBAC-red?style=plastic&logo=microsoftpowerpoint&logoColor=orange)](https://hcmuteduvn-my.sharepoint.com/:p:/g/personal/tquang_sdh20_hcmut_edu_vn/EZmcIMj8739LrdtF9CRbHwoBQ3NGoQUoaDMCjeEF6iZ_iA?e=dzX99T) for more details about RBAC**
 
 <a href="https://github.com/tquangsdh20/rbac-nist"><p align="center"><img src="https://img.shields.io/badge/Github-RBAC_NIST-orange?style=social&logo=github"></p></a>
