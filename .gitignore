@@ -149,3 +149,4 @@ ipython_config.py
 
 # Remove file generate .csv
 src/model/*.csv
+*.db
