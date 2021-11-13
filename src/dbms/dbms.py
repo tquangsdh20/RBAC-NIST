@@ -3,6 +3,8 @@ import sqlite3
 import json
 import casbin
 from .const import *
+from .operations import *
+
 def validation(cursor,query,role,exception):
     cursor.execute(query)
     validList = cursor.fetchall()
@@ -56,6 +58,7 @@ class DB:
         prev_session = json.loads(self.cur.fetchone()[0])
         if session not in prev_session.keys():
             prev_session[session] = role
+        elif prev_session[session]==role: print('This role has been assigned to this user')
         else: raise InValidValue(f"Failure to assign the role '{role}' for the session '{session}' because the current role comflict with the new role")
         new_session = json.dumps(prev_session)
         self.cur.execute(__UPDATE_ROLE,(new_session,user))
@@ -116,14 +119,30 @@ class OpenModel:
         _conf,_policy = model
         self.__user__ = ''
         self.__enforcer__ = casbin.Enforcer(_conf,_policy)
+        
+    def init(self):
+        func = actions["INIT"]
+        func()
     
-    def login(self,username:str):
-        self.__user__ = username
+    def login(self,username:str,password:str,db:DB):
+        res = db.sign_in(username,password)
+        if res is None:
+            print('Error: Password or User is incorrect.')
+        else:
+            self.__user__,name,role_str = res
+            print(f'Hello {name},')
+            print('Your roles:')
+            roles = json.loads(role_str)
+            print(roles)
         
     def request(self,domain:str,obj:str,act:str):
         __sub = self.__user__ 
         res = self.__enforcer__.enforce(__sub,domain,obj,act)
+        result = None
         if res:
             print('Your request is accepted')
+            operation = actions[act]
+            result = operation(obj)
         else:
             print('Access Denied.')
+        return result
